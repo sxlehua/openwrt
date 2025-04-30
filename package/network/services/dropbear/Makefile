@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=dropbear
 PKG_VERSION:=2024.86
-PKG_RELEASE:=1
+PKG_RELEASE:=101
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:= \
@@ -125,8 +125,8 @@ DB_OPT_COMMON = \
 	DROPBEAR_DSS,0 \
 	DROPBEAR_CLI_NETCAT,0 \
 	DO_MOTD,0 \
-	DROPBEAR_DH_GROUP14_SHA1,0 \
-	DROPBEAR_SHA1_HMAC,0 \
+	DROPBEAR_DH_GROUP14_SHA1,1 \
+	DROPBEAR_SHA1_HMAC,1 \
 
 
 ##############################################################################
